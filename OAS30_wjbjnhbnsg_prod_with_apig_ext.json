@@ -1,0 +1,244 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "crm_API",
+    "version" : "2025-07-19 12:17:08UTC"
+  },
+  "servers" : [ {
+    "url" : "https://wjbjnhbnsg.execute-api.us-east-2.amazonaws.com/{basePath}",
+    "variables" : {
+      "basePath" : {
+        "default" : "prod"
+      }
+    }
+  } ],
+  "paths" : {
+    "/sendDailyReminderToClient" : {
+      "x-amazon-apigateway-any-method" : {
+        "responses" : {
+          "default" : {
+            "description" : "Default response for ANY /sendDailyReminderToClient"
+          }
+        },
+        "x-amazon-apigateway-integration" : {
+          "payloadFormatVersion" : "2.0",
+          "type" : "aws_proxy",
+          "httpMethod" : "POST",
+          "uri" : "arn:aws:apigateway:us-east-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-2:774418556425:function:sendDailyReminderToClient/invocations",
+          "connectionType" : "INTERNET"
+        }
+      }
+    },
+    "/NameEmp" : {
+      "get" : {
+        "responses" : {
+          "default" : {
+            "description" : "Default response for GET /NameEmp"
+          }
+        },
+        "x-amazon-apigateway-integration" : {
+          "payloadFormatVersion" : "2.0",
+          "type" : "aws_proxy",
+          "httpMethod" : "POST",
+          "uri" : "arn:aws:apigateway:us-east-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-2:774418556425:function:NameEmpbyEmail/invocations",
+          "connectionType" : "INTERNET"
+        }
+      }
+    },
+    "/getClientJobs" : {
+      "get" : {
+        "responses" : {
+          "default" : {
+            "description" : "Default response for GET /getClientJobs"
+          }
+        },
+        "x-amazon-apigateway-integration" : {
+          "payloadFormatVersion" : "2.0",
+          "type" : "aws_proxy",
+          "httpMethod" : "POST",
+          "uri" : "arn:aws:apigateway:us-east-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-2:774418556425:function:getJobsByClient/invocations",
+          "connectionType" : "INTERNET"
+        }
+      }
+    },
+    "/getClientMeetings" : {
+      "get" : {
+        "responses" : {
+          "default" : {
+            "description" : "Default response for GET /getClientMeetings"
+          }
+        },
+        "x-amazon-apigateway-integration" : {
+          "payloadFormatVersion" : "2.0",
+          "type" : "aws_proxy",
+          "httpMethod" : "POST",
+          "uri" : "arn:aws:apigateway:us-east-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-2:774418556425:function:getmeetingbyemail/invocations",
+          "connectionType" : "INTERNET"
+        }
+      }
+    },
+    "/getClients" : {
+      "get" : {
+        "responses" : {
+          "default" : {
+            "description" : "Default response for GET /getClients"
+          }
+        },
+        "x-amazon-apigateway-integration" : {
+          "payloadFormatVersion" : "2.0",
+          "type" : "aws_proxy",
+          "httpMethod" : "POST",
+          "uri" : "arn:aws:apigateway:us-east-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-2:774418556425:function:getClients/invocations",
+          "connectionType" : "INTERNET"
+        }
+      }
+    },
+    "/getJobs" : {
+      "get" : {
+        "responses" : {
+          "default" : {
+            "description" : "Default response for GET /getJobs"
+          }
+        },
+        "x-amazon-apigateway-integration" : {
+          "payloadFormatVersion" : "2.0",
+          "type" : "aws_proxy",
+          "httpMethod" : "POST",
+          "uri" : "arn:aws:apigateway:us-east-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-2:774418556425:function:getJobs/invocations",
+          "connectionType" : "INTERNET"
+        }
+      }
+    },
+    "/getdetailsclient" : {
+      "get" : {
+        "responses" : {
+          "default" : {
+            "description" : "Default response for GET /getdetailsclient"
+          }
+        },
+        "x-amazon-apigateway-integration" : {
+          "payloadFormatVersion" : "2.0",
+          "type" : "aws_proxy",
+          "httpMethod" : "POST",
+          "uri" : "arn:aws:apigateway:us-east-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-2:774418556425:function:getclientdetails/invocations",
+          "connectionType" : "INTERNET"
+        }
+      }
+    },
+    "/createClient" : {
+      "post" : {
+        "responses" : {
+          "default" : {
+            "description" : "Default response for POST /createClient"
+          }
+        },
+        "x-amazon-apigateway-integration" : {
+          "payloadFormatVersion" : "2.0",
+          "type" : "aws_proxy",
+          "httpMethod" : "POST",
+          "uri" : "arn:aws:apigateway:us-east-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-2:774418556425:function:createClient/invocations",
+          "connectionType" : "INTERNET"
+        }
+      }
+    },
+    "/createJob" : {
+      "post" : {
+        "responses" : {
+          "default" : {
+            "description" : "Default response for POST /createJob"
+          }
+        },
+        "x-amazon-apigateway-integration" : {
+          "payloadFormatVersion" : "2.0",
+          "type" : "aws_proxy",
+          "httpMethod" : "POST",
+          "uri" : "arn:aws:apigateway:us-east-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-2:774418556425:function:createJob/invocations",
+          "connectionType" : "INTERNET"
+        }
+      }
+    },
+    "/getPresignedUrl" : {
+      "post" : {
+        "responses" : {
+          "default" : {
+            "description" : "Default response for POST /getPresignedUrl"
+          }
+        },
+        "x-amazon-apigateway-integration" : {
+          "payloadFormatVersion" : "2.0",
+          "type" : "aws_proxy",
+          "httpMethod" : "POST",
+          "uri" : "arn:aws:apigateway:us-east-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-2:774418556425:function:getPresignedUrl/invocations",
+          "connectionType" : "INTERNET"
+        }
+      }
+    },
+    "/saveMeeting" : {
+      "post" : {
+        "responses" : {
+          "default" : {
+            "description" : "Default response for POST /saveMeeting"
+          }
+        },
+        "x-amazon-apigateway-integration" : {
+          "payloadFormatVersion" : "2.0",
+          "type" : "aws_proxy",
+          "httpMethod" : "POST",
+          "uri" : "arn:aws:apigateway:us-east-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-2:774418556425:function:saveMeeting/invocations",
+          "connectionType" : "INTERNET"
+        }
+      }
+    },
+    "/sendReminder" : {
+      "post" : {
+        "responses" : {
+          "default" : {
+            "description" : "Default response for POST /sendReminder"
+          }
+        },
+        "x-amazon-apigateway-integration" : {
+          "payloadFormatVersion" : "2.0",
+          "type" : "aws_proxy",
+          "httpMethod" : "POST",
+          "uri" : "arn:aws:apigateway:us-east-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-2:774418556425:function:sendDailyReminderToClient/invocations",
+          "connectionType" : "INTERNET"
+        }
+      }
+    },
+    "/updateJobStatus" : {
+      "post" : {
+        "responses" : {
+          "default" : {
+            "description" : "Default response for POST /updateJobStatus"
+          }
+        },
+        "x-amazon-apigateway-integration" : {
+          "payloadFormatVersion" : "2.0",
+          "type" : "aws_proxy",
+          "httpMethod" : "POST",
+          "uri" : "arn:aws:apigateway:us-east-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-2:774418556425:function:updateJobStatus/invocations",
+          "connectionType" : "INTERNET"
+        }
+      }
+    }
+  },
+  "components" : {
+    "x-amazon-apigateway-integrations" : {
+      "unusedIntegration_bga7w0d" : {
+        "payloadFormatVersion" : "2.0",
+        "type" : "aws_proxy",
+        "httpMethod" : "POST",
+        "uri" : "arn:aws:apigateway:us-east-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-2:774418556425:function:createJob/invocations",
+        "connectionType" : "INTERNET"
+      }
+    }
+  },
+  "x-amazon-apigateway-cors" : {
+    "allowMethods" : [ "OPTIONS", "POST" ],
+    "allowHeaders" : [ "content-type" ],
+    "maxAge" : 0,
+    "allowCredentials" : false,
+    "allowOrigins" : [ "*" ]
+  },
+  "x-amazon-apigateway-importexport-version" : "1.0"
+}
